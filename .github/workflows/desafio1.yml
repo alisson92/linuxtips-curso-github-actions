@@ -23,4 +23,4 @@ jobs:
         uses: docker/scout-action@v1
         with:
           command: cves
-          to-latest: true
+          image: ${{ inputs.tags }}
