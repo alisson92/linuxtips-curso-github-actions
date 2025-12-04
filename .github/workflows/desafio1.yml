@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       tags:
-        description: 'Informe uma imagem de container com tags, separando por dois pontos (:)'
+        description: 'Informe uma imagem de container para testar o workflow (ex: nginx:latest)'
         required: true
         type: string
 
 jobs:
-  print-tag:
+  Desafio_1:
     runs-on: ubuntu-latest
     steps:
       - name: Fazendo o pull da imagem informada
