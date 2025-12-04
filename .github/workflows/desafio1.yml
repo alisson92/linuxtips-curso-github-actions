@@ -1,0 +1,11 @@
+name: DAY 01 - Desafio 1
+
+on:
+  workflow_dispatch
+
+jobs:
+    desafio1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Teste
+              run: echo "TESTANDO"
