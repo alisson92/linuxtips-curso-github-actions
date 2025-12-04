@@ -15,6 +15,12 @@ jobs:
         - name: Exibir uma mensagem
           run: echo "Estou fazendo o curso de Github Actions da Linuxtips" > ${{ github.workspace }}/mensagem.txt
 
+               # owner/repo@ref - Comum
+               # owner/repo/aws@ref - Comum
+ 
+               # owner/repo/ecs-login.yml@ref - Não tão comum
+               # owner/repo/aws/ecs-login.yml@ref - Não tão comum
+               
         - uses: actions/upload-artifact@v4
           with:
             name: strigus-upload
