@@ -11,7 +11,6 @@ on:
 jobs:
   print-tag:
     runs-on: ubuntu-latest
-    if: ${{ inputs.print_tags }} 
     steps:
       - name: Fazendo o pull da imagem informada
         run: docker pull ${{ inputs.tags }}
