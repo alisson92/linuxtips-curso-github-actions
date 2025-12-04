@@ -1,7 +1,9 @@
 name: Vendo arquivos compartilhados entre Jobs
 
 on:
-  workflow_dispatch
+  push:
+    branches:
+        - main
 
 jobs:
     job_1:
