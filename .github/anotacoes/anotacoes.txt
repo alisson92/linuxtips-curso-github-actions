@@ -1,0 +1,6 @@
+*** Informações importantes ***
+
+Jobs = uma máquina inteira (semelhante à uma VM), ou seja, tudo que estiver a nível de job rodará em ambiente diferentes.
+
+Se eu tiver os jobs1, jobs2 e jobs3 representam 3 máquinas diferentes.
+
