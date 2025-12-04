@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       tags:
-        description: 'Informe uma imagem de container com tags separadas por dois pontos (:)'
+        description: 'Informe uma imagem de container com tags, separando por dois pontos (:)'
         required: true
         type: string
 
@@ -14,3 +14,6 @@ jobs:
     steps:
       - name: Fazendo o pull da imagem informada
         run: docker pull ${{ inputs.tags }}
+
+      - name: Listando as imagens locais
+        run: docker images
