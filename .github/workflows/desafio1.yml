@@ -17,3 +17,10 @@ jobs:
 
       - name: Listando as imagens locais
         run: docker images
+
+      - name: Verificando vulnerabilidades com Docker Scout via Actions
+        id: docker-scout
+        uses: docker/scout-action@v1
+        with:
+          command: cves
+          to-latest: true
