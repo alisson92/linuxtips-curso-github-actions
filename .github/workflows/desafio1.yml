@@ -1,10 +1,10 @@
-name: EXAMPLE
+name: DAY 01 - Desafio 1
 
 on:
   workflow_dispatch:
     inputs:
       tags:
-        description: 'Test scenario tags'
+        description: 'Informe uma imagem de container com tags separadas por dois pontos (:)'
         required: true
         type: string
 
@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ inputs.print_tags }} 
     steps:
-      - name: Print the input tag to STDOUT
-        run: echo  The tags are ${{ inputs.tags }} 
+      - name: Fazendo o pull da imagem informada
+        run: docker pull ${{ inputs.tags }}
