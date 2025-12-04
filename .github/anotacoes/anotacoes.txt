@@ -4,3 +4,5 @@ Jobs = uma máquina inteira (semelhante à uma VM), ou seja, tudo que estiver a 
 
 Se eu tiver os jobs1, jobs2 e jobs3 representam 3 máquinas diferentes.
 
+Steps = estar dentro da máquina rodando comandos
+
